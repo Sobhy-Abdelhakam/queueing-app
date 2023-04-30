@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق طوابير</string>
+    <string name="enter">ادخل</string>
+    <string name="deterministic">مُرتّب</string>
+    <string name="stochastic">عشوائي</string>
+    <string name="system_capacity">سعة النظام</string>
+    <string name="arrival_time">وقت الوصول</string>
+    <string name="service_time">وقت الخدمة</string>
+    <string name="calculate">احسب</string>
+    <string name="server_number">عدد الخوادم</string>
+    <string name="time">الوقت</string>
+    <string name="number">العدد</string>
+    <string name="text_to_move">لحساب n(t) و Wq(n)</string>
+    <string name="click_here">اضغط هنا</string>
+    <string name="initial_customers">العدد المبدأي للعملاء</string>
+    <string name="welcome_message">مرحبًا بك في تطبيق الطوابير لحسابات: -
+         1) الوقت الذي يكون فيه النظام ممتلئًا لأول مرة (ti).
+         2) العدد في النظام في الوقت t (n (t)).
+         3) الوقت الذي يجب أن ينتظره العميل في قائمة الانتظار للحصول على الخدمة (Wqn).
+         اضغط على الزر التالي للدخول إلى حسابات النظام المرتب</string>
+</resources>

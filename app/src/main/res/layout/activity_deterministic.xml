@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Deterministic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/det_ll_systemCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/det_tv_sysCap"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/system_capacity"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/det_et_sysCap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="@string/system_capacity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sysCap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/det_ll_arrTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/det_tv_arrTime"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/arrival_time"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/det_et_arrTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:ems="10"
+                android:hint="@string/arrival_time">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_arrTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#616161"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/det_ll_serTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/det_tv_serTime"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/service_time"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/det_et_serTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:ems="10"
+                android:hint="@string/service_time">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_serTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#616161"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/det_ll_M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/det_tv_M"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"
+                android:gravity="center"
+                android:text="@string/initial_customers"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/det_et_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:ems="10"
+                android:hint="@string/initial_customers">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_M"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#616161"
+                    android:visibility="gone"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/det_btn_calc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/button_background"
+            android:text="@string/calculate"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/det_tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/text_to_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/text_to_move"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/click_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/click_here"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

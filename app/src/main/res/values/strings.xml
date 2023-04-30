@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Queueing App</string>
+    <string name="enter">Enter</string>
+    <string name="deterministic">Deterministic</string>
+    <string name="stochastic">Stochastic</string>
+    <string name="system_capacity">System Capacity</string>
+    <string name="arrival_time">Arrival Time</string>
+    <string name="service_time">Service Time</string>
+    <string name="calculate">Calculate</string>
+    <string name="server_number">Server Number</string>
+    <string name="time">time</string>
+    <string name="number">number</string>
+    <string name="text_to_move"><![CDATA[click to calculate n(t) & Wq(n)]]></string>
+    <string name="click_here">click here</string>
+    <string name="initial_customers">Initial Customers</string>
+    <string name="welcome_message">Welcome to the application queues for Calculates:-\n
+        1) the time when the system will be full for the first time(ti).\n
+        2) number in the system at time t(n(t)).\n
+        3) the time that the nth customer must wait in the queue to get service (Wqn).\n
+        press the following button to enter the Deterministic Queueing System</string>
+    <string-array name="select">
+        <item>calculate n(t)</item>
+        <item>calculate Wq(n)</item>
+    </string-array>
+</resources>
